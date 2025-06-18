@@ -523,7 +523,7 @@ $result = $conn->query($sql);
                     if ($conn->connect_error) {
                         die("Connection failed: " . $conn->connect_error);
                     }
-                    $sql = "SELECT * FROM production_cycle ORDER BY timestamp DESC";
+                    $sql = "SELECT * FROM production_cycle ORDER BY id DESC";
                     $result = $conn->query($sql);
 
                     // Flag to track if we're at the first (latest) entry
